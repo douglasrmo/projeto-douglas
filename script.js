@@ -1,7 +1,3 @@
-/* ===================================================
-   A Vitória Ama o Douglas? — script.js
-=================================================== */
-
 // ---------- ESTADO ----------
 let naoCliques = 0;
 const MAX_NAO  = 5;
@@ -20,8 +16,8 @@ const ctx       = canvas.getContext('2d');
 const frases = [
   "A vitória ama o Douglas?",
   "Tem certeza que não? 🤔",
-  "Pense bem antes de responder...",
-  "Última chance de errar...",
+  "Ei mano, tem certeza?",
+  "você não vai casar cmg?",
   "Você REALMENTE acha que não??",
 ];
 
