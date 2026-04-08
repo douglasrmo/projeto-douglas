@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Vitória Ama o Douglas?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="canvas"></canvas>
+
+  <div class="stars" id="stars"></div>
+
+  <main id="app">
+
+    <section id="tela-pergunta" class="tela ativa">
+      <p class="subtitulo">pergunta do século</p>
+      <h1 id="frase">A vitória ama o Douglas?</h1>
+      <div id="btns">
+        <button id="btn-sim" class="btn btn-sim" onclick="clicarSim()">
+          <span class="btn-texto">Sim</span>
+        </button>
+        <button id="btn-nao" class="btn btn-nao" onclick="clicarNao()">
+          <span class="btn-texto">Não</span>
+        </button>
+      </div>
+      <p id="contador-hint" class="hint"></p>
+    </section>
+
+    <section id="tela-final" class="tela">
+      <div class="troféu">🏆</div>
+      <p class="subtitulo">era óbvio desde sempre</p>
+      <h1 class="frase-final">A vitória <em>SEMPRE</em><br/>amou o Douglas!</h1>
+      <p class="frase-sub">Eu sabia!! Não tinha como ser diferente.</p>
+      <button class="btn btn-reiniciar" onclick="reiniciar()">Perguntar de novo</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
